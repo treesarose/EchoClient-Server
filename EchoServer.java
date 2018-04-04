@@ -5,12 +5,9 @@ public class EchoServer
 {
 	public EchoServer(int portnum)
 	{
-		try
-		{
+		try{
 			server = new ServerSocket(portnum);
-		}
-		catch (Exception err)
-		{
+		}catch (Exception err){
 			System.out.println(err);
 		}
 	}
