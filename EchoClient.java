@@ -10,8 +10,7 @@ public class EchoClient{
 			PrintWriter w = new PrintWriter(s.getOutputStream(), true);
 			BufferedReader con = new BufferedReader(new InputStreamReader(System.in));
 			String line;
-			do
-			{
+			do{
 				line = r.readLine();
 				if ( line != null )
 					System.out.println(line);
@@ -19,9 +18,7 @@ public class EchoClient{
 				w.println(line);
 			}
 			while ( !line.trim().equals("bye") );
-		}
-		catch (Exception err)
-		{
+		}catch (Exception err){
 			System.err.println(err);
 		}
 	}
