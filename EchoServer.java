@@ -26,19 +26,16 @@ public class EchoServer{
 				client.close();
 			}
 		}
-		catch (Exception err)
-		{
+		catch (Exception err){
 			System.err.println(err);
 		}
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args){
 		EchoServer s = new EchoServer(9999);
 		//System.out.println("server is ready"); 
 		s.serve();
 	}
-
 	private ServerSocket server;
 
 }
