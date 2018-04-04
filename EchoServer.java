@@ -42,13 +42,5 @@ public class EchoServer
 		}
 	}
 
-	public static void main(String[] args)
-	{
-		EchoServer s = new EchoServer(9999);
-		//System.out.println("server is ready"); 
-		s.serve();
-	}
-
-	private ServerSocket server;
 }
 
