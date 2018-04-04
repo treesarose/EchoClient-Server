@@ -16,7 +16,7 @@ public class EchoClient
 			do
 			{
 				line = r.readLine();
-				if ( line = null )
+				if ( line != null )
 					System.out.println(line);
 				line = con.readLine();
 				w.println(line);
